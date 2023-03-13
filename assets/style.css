@@ -2,8 +2,33 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 :root{
 
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+nav > div{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav > div > img{
+    min-width: 127px;
+    min-height: 25px;
+}
+
+#button-inizia{
+    background-color: #0061FF;
+    padding: 5px 10px;
+    color: white;
 }
