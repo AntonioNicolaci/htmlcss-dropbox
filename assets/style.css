@@ -8,11 +8,16 @@
 :root{
 
 }
+header{
+    
+    background-color: #B4D0E7;
+}
 
 nav{
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    background-color: white;
 }
 
 nav > div{
@@ -27,8 +32,25 @@ nav > div > img{
     min-height: 25px;
 }
 
-#button-inizia{
+.bottone-azzurro{
     background-color: #0061FF;
     padding: 5px 10px;
     color: white;
+}
+
+#jumbo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+}
+
+#jumbo > div{
+    display: flex;
+    flex-direction: row;
+}
+
+#jumbo img{
+    min-width: 50%;
+    min-height: 30%;
 }
