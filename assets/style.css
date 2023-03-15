@@ -181,8 +181,12 @@ footer{
 }
 
 .azienda-blocco-colorato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: calc(100%/2);
     height: 318px;
+    padding: 2em;
 }
 
 .azienda-blocco-colorato img{
@@ -350,8 +354,19 @@ footer{
 }
 
 #azienda-blocco-grigio{
-    min-width: 636px;
+    display: flex;
+    flex-direction: column;
+    max-width: 636px;
     height: 636px;
+    background-color: #F5F5F5;
+    border: 4em solid #F5F5F5;
+}
+
+#azienda-blocco-grigio-fake-line{
+    width: 8em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #d0d0d3 ;
+    margin-bottom: 2.7em;
 }
 
 #azienda-blocco-colorato-uno{
