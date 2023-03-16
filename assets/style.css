@@ -1,11 +1,11 @@
-*{
+*{ /* pulizia iniziale */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-:root{
+:root{ /* definisce la grandezza massima degli oggetti del main e non solo */
     --max-width-center:65%;
 }
 header{
@@ -63,7 +63,9 @@ footer{
     color: white;
 }
 
-.bottone-azzurro{
+/*#ff00ff---------------------------------------------------------------------------- fine tag, inizio classi ----------------------------------------------------------------------------#ff00ff*/
+
+.bottone-azzurro{ /* specifica i bottoni azzurri */
     background-color: #0061FF;
     padding: 5px 10px;
     color: white;
@@ -71,47 +73,47 @@ footer{
     max-height: max-content;
 }
 
-.bi-arrow-down-short{
+.bi-arrow-down-short{ /* modifica un'icona di bootstrap */
     font-weight: bold;
     font-size: 60px;
     align-self: flex-end;
 }
 
-.checkbox-esterno{
+.checkbox-esterno{ /* blocco per la checkbox, l'esterno che rende azzurro il tutto */
     display: flex;
     justify-content: center;
-    border-radius: var(--grandezza-raggio-checkbox);
+    border-radius: var(--grandezza-raggio-checkbox); /* viene specificato in #piano-costo(215)*/
     background-color: #0061ff;
     padding: calc(var(--grandezza-raggio-checkbox) / 2);
     max-width: calc(var(--grandezza-raggio-checkbox) * 2);
     
 }
 
-.checkbox-interno{
+.checkbox-interno{ /* parte interna della checkbox di colore bianco */
     background-color: white;
     padding: calc(var(--grandezza-raggio-checkbox) / 2);
     border-radius: calc(var(--grandezza-raggio-checkbox) / 2);
 }
 
-.scritta-piano-costo{
+.scritta-piano-costo{ 
     margin: 0 30px 0 3px;
 }
 
-.card{
+.card{ /* regole base per le card dei piani di vendita */
     display: flex;
     flex-direction: column;
     border: 2px solid #d0d0d3;
     width: calc(100% / 3 - 20px);
 }
 
-.card-titolo{
+.card-titolo{ /* serve per dividere il titolo dal corpo con la linea e non solo */
     text-align: center;
     font-size: 20px;
     padding: .7em 0;
     border-bottom: 2px solid #d0d0d3;
 }
 
-.card-corpo{
+.card-corpo{ /* regole base per il corpo delle card */
     display: flex;
     flex-direction: column;
     padding: 2em 3em;
@@ -121,7 +123,7 @@ footer{
     margin-bottom: 2.5em;
 }
 
-.card-bold{
+.card-bold{ /* rende in grassetto certe scritte dele card */
     margin: 1em 0 ;
     font-weight: bold;
 }
@@ -137,23 +139,23 @@ footer{
     margin-bottom: 3em;
 }
 
-.card-fake-line{
+.card-fake-line{ /* serve per creare la linea in mezzo alle card che non copre l'intera lunghezza della card */
     width: 3.5em;
     padding-bottom: 2em;
     border-bottom: 2px solid #d0d0d3;
     margin-bottom: 2.7em;
 }
 
-.bi-check-lg{
+.bi-check-lg{ /* modifica un'icona di bootstrap */
     color: #1163FF;
     font-weight: bold;
 }
 
-.card-parte-finale{
+.card-parte-finale{ 
     margin-bottom: 1em;
 }
 
-.bottone-bianco{
+.bottone-bianco{ /* classe per specificare i bottoni bianchi della pagina */
     margin-top: 1.5em;
     padding: .7em;
     border: 1px solid black;
@@ -161,11 +163,11 @@ footer{
     max-height: max-content;
 }
 
-.business-card{
+.business-card{ /* divide in tre le card nella zona business tenendo conto del gap */
     max-width: calc(100% / 3 - 2em);
 }
 
-.business-card img{
+.business-card img{ /* ridimensiona le immagini */
     max-width: 100%;
     max-height: 300px;
 }
@@ -174,13 +176,13 @@ footer{
     margin-bottom: 2em;
 }
 
-.azienda-laterale{
+.azienda-laterale{ /* specifica le regole base dei quadrati laterali nella zona delle aziende */
     display: flex;
     flex-wrap: wrap;
     width: calc(100% / 3);
 }
 
-.azienda-blocco-colorato{
+.azienda-blocco-colorato{ /* specifica le regole per il colore sempre della zona di prima */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,18 +191,20 @@ footer{
     padding: 2em;
 }
 
-.azienda-blocco-colorato img{
+.azienda-blocco-colorato img{ /* ridimensiona la grandezza dei loghi */
     max-width: 85%;
     max-height: 85%;
 }
 
-.domande-frequenti-sez{
+.domande-frequenti-sez{ /* crea lo spazio e la linea inferiore nella zona delle domande frequenti */
     border-bottom: 1px solid black;
     padding: 2em 0;
     font-weight: bold;
 }
 
-#main-alto{
+/*#ff00ff ----------------------------------------------------------------------------fine classi, inizio id ---------------------------------------------------------------------------- #ff00ff*/
+
+#main-alto{ /* posiziona gli oggetti della pagina al centro del main e in colonna */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -209,7 +213,7 @@ footer{
     margin-top: 6em;
 }
 
-#jumbo{
+#jumbo{ /* regole per jumbo */
     display: flex;
     flex-wrap: wrap;
     justify-content: center
@@ -227,7 +231,7 @@ footer{
     position: absolute;
 }
 
-#p-jumbo{
+#p-jumbo{ /* regole per la zona delle scritte di jumbo */
     display: flex;
     flex-direction: column;
 }
@@ -247,7 +251,7 @@ footer{
     min-height: 469px;
 }
 
-#piano-costo{
+#piano-costo{ /* regole che specificano la sezione con i piani e i costi */
     --grandezza-raggio-checkbox: 8px;
     display: flex;
     flex-direction: column;
@@ -260,17 +264,13 @@ footer{
     padding: 3em 0;
 }
 
-#sezione-bottoni:nth-child(2){
-    margin-right: 30px;
-}
-
 #sezione-superiore-card-costo{
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-#ultima-card{
+#ultima-card{ /* regole per la card orizzontale */
     width: 100%;
     width: calc(100% - 20px);
     margin-top: 3em;
@@ -299,7 +299,7 @@ footer{
     padding-right: 2em;
 }
 
-#partner{
+#partner{ /* regole per la sezione dei partner */
     display: flex;
     flex-direction: row;
     margin-top: 9em;
@@ -319,7 +319,7 @@ footer{
     max-width: calc(100% - 840px);
 }
 
-#business{
+#business{ /* regole per la sezione business */
     display: flex;
     flex-direction: column;
     max-width: var(--max-width-center);
@@ -369,6 +369,7 @@ footer{
     margin-bottom: 2.7em;
 }
 
+/* inizio colori per le card dei partner*/
 #azienda-blocco-colorato-uno{
     background-color: #A2D39B;
 }
@@ -400,8 +401,9 @@ footer{
 #azienda-blocco-colorato-otto{
     background-color: #FFD830;
 }
+/* fine colori per le card dei partner*/
 
-#prova-gratuita{
+#prova-gratuita{ /* regole per la sezione della proga gratuita */
     display: flex;
     justify-content: space-around;
     background-color: #B4D0E7;
@@ -418,7 +420,7 @@ footer{
     padding: .6em 3em;
 }
 
-#domande-frequenti{
+#domande-frequenti{ /* regole per la sezione delle domande seguenti */
     width: var(--max-width-center);
     margin: 6em 12.5%  6em 12.5%;
 }
@@ -427,7 +429,7 @@ footer{
     font-size: 45px;
 }
 
-#footer{
+#footer{ /* regole per la sezione del footer, è un div che si trova nel footer per centrarlo con il centro */
     display: flex;
     flex-direction: row;
     gap: 6em;
@@ -441,7 +443,7 @@ footer{
     gap: 30px;
 }
 
-#footer-fake-line{
+#footer-fake-line{ /* finta liena come nella sezione dei piani */
     width: 8em;
     padding-bottom: 2em;
     border-bottom: 2px solid #d0d0d3;
